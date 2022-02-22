@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.homepage-two-col {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". header ."
+        ". content .";
+}
+
+.recipe-two-col {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 150px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". header header ."
+        ". description description ."
+        ". image image ."
+        ". steps ingredients ."
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.description {
+    grid-area: description;
+}
+
+.image {
+    grid-area: image;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+}
+
+.steps {
+    grid-area: steps;
+}
+
+.ingredients {
+    grid-area: ingredients;
+}
